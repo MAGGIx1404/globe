@@ -92,6 +92,7 @@ class Globe {
       waitForGlobeReady: true,
       animateIn: true,
     });
+
     this.globe.hexPolygonsData(countries.features);
     this.globe.hexPolygonResolution(3);
     this.globe.hexPolygonMargin(0.65);
@@ -101,7 +102,7 @@ class Globe {
     this.globeMaterial = this.globe.globeMaterial();
     this.globeMaterial.color = new THREE.Color(0x3a228a);
     this.globeMaterial.emissive = new THREE.Color(0x220038);
-    this.globeMaterial.emissiveIntensity = 0.1;
+    this.globeMaterial.emissiveIntensity = 0;
     this.globeMaterial.shininess = 1;
 
     this.scene.add(this.globe);
